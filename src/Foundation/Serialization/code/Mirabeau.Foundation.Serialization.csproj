@@ -55,6 +55,21 @@
     <PackageReference Include="Unicorn">
       <Version>4.0.8</Version>
     </PackageReference>
+    <PackageReference Include="Unicorn.Core">
+      <Version>4.0.8</Version>
+    </PackageReference>
+    <PackageReference Include="Unicorn.Roles">
+      <Version>4.0.8</Version>
+    </PackageReference>
+    <PackageReference Include="Unicorn.Roles.Core">
+      <Version>4.0.8</Version>
+    </PackageReference>
+    <PackageReference Include="Unicorn.Users">
+      <Version>4.0.8</Version>
+    </PackageReference>
+    <PackageReference Include="Unicorn.Users.Core">
+      <Version>4.0.8</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
@@ -75,9 +90,6 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Foundation\Foundation.Serialization.Serialization.config">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="App_Config\Include\Foundation\Foundation.Serialization.config">
       <SubType>Designer</SubType>
     </Content>
@@ -95,6 +107,7 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.DeployedContentEditorWarnings.config.disabled" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.IdentityServer.config.disabled" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.zSharedSecret.config" />
+    <Content Include="App_Config\Include\Unicorn\Rainbow.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

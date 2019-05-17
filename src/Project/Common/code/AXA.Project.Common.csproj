@@ -78,6 +78,11 @@
     <Content Include="App_Config\Include\Project\Project.Common.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="App_Config\Include\Project\Project.Common.Website.SPE.config" />
+    <Content Include="App_Config\Include\Project\z.Common.Website.DevSettings.config" />
+    <Content Include="Views\Common\Common.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="web.config.xdt" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -91,12 +96,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\CommonController.cs" />
-    <Compile Include="Models\Common.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\ICommonRepository.cs" />
-    <Compile Include="Repositories\CommonRepository.cs" />
-    <Compile Include="Templates.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Common\Sublayouts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,6 +1,6 @@
 {
   "WebsiteRoot": "C:\\Inetpub\\wwwroot\\axa-sitecore-poc.dev.local",
-  "XConnectRoot": "C:\\Inetpub\\wwwroot\\axa-sitecore-poc.xconnect\\",
+  "XConnectRoot": "C:\\Inetpub\\wwwroot\\axa-sitecore-poc.xconnect",
   "InstanceUrl": "https://axa-sitecore-poc.dev.local/",
   "SolutionName": "axa-sitecore-poc.sln",
   "ProjectFolder": "C:\\Projects\\Sitecore-Solutions\\AXA",
