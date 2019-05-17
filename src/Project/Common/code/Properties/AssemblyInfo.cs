@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("AXA.Project.Common")]
-[assembly: AssemblyCopyright("Copyright Â©  2017")]
+[assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("161c9f23-5d1e-49c5-b17f-f383bd3981c9")]
+[assembly: Guid("3F1EAEF9-6B5B-4131-8B48-33DB3313FAE9")]
 
 // Version information for an assembly consists of the following four values:
 //

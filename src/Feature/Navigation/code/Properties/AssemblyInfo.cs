@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Mirabeau.Feature.Navigation")]
-[assembly: AssemblyCopyright("Copyright Â©  2017")]
+[assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("8e478825-6f0a-40ee-a4eb-a4efb1991bde")]
+[assembly: Guid("305673C8-A680-474C-AA1D-497077DC7E81")]
 
 // Version information for an assembly consists of the following four values:
 //

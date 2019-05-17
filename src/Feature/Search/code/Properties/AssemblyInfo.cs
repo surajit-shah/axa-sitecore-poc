@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Mirabeau.Feature.Search")]
-[assembly: AssemblyCopyright("Copyright Â©  2017")]
+[assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("5dd4a137-c320-41a3-a5b2-9d8083f0a101")]
+[assembly: Guid("0811F040-0BF2-4E67-970E-D212AAE1CECD")]
 
 // Version information for an assembly consists of the following four values:
 //
