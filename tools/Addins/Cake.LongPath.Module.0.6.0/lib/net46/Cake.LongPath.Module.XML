@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cake.LongPath.Module</name>
+    </assembly>
+    <members>
+        <member name="P:Cake.LongPath.Module.LongPathDirectory.Path">
+            <summary>
+            Gets the path to the directory.
+            </summary>
+            <value>The path.</value>
+        </member>
+        <member name="P:Cake.LongPath.Module.LongPathDirectory.Cake#Core#IO#IFileSystemInfo#Path">
+            <summary>
+            Gets the path to the entry.
+            </summary>
+            <value>The path.</value>
+        </member>
+        <member name="M:Cake.LongPath.Module.LongPathDirectory.Create">
+            <summary>
+            Creates the directory.
+            </summary>
+        </member>
+        <member name="M:Cake.LongPath.Module.LongPathDirectory.Move(Cake.Core.IO.DirectoryPath)">
+            <summary>
+            Moves the directory to the specified destination path.
+            </summary>
+            <param name="destination">The destination path.</param>
+        </member>
+        <member name="M:Cake.LongPath.Module.LongPathDirectory.Delete(System.Boolean)">
+            <summary>
+            Deletes the directory.
+            </summary>
+            <param name="recursive">Will perform a recursive delete if set to <c>true</c>.</param>
+        </member>
+        <member name="M:Cake.LongPath.Module.LongPathDirectory.GetDirectories(System.String,Cake.Core.IO.SearchScope)">
+            <summary>
+            Gets directories matching the specified filter and scope.
+            </summary>
+            <param name="filter">The filter.</param>
+            <param name="scope">The search scope.</param>
+            <returns>Directories matching the filter and scope.</returns>
+        </member>
+        <member name="M:Cake.LongPath.Module.LongPathDirectory.GetFiles(System.String,Cake.Core.IO.SearchScope)">
+            <summary>
+            Gets files matching the specified filter and scope.
+            </summary>
+            <param name="filter">The filter.</param>
+            <param name="scope">The search scope.</param>
+            <returns>Files matching the specified filter and scope.</returns>
+        </member>
+        <member name="M:Cake.LongPath.Module.LongPathDirectory.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+        <member name="P:Cake.LongPath.Module.LongPathFile.Path">
+            <summary>
+            Gets the path to the file.
+            </summary>
+            <value>The path.</value>
+        </member>
+        <member name="P:Cake.LongPath.Module.LongPathFile.Length">
+            <summary>
+            Gets the length of the file.
+            </summary>
+            <value>The length of the file.</value>
+        </member>
+        <member name="P:Cake.LongPath.Module.LongPathFile.Attributes">
+            <summary>
+            Gets or sets the attributes of a file.
+            </summary>
+        </member>
+        <member name="P:Cake.LongPath.Module.LongPathFile.Cake#Core#IO#IFileSystemInfo#Path">
+            <summary>
+            Gets the path to the entry.
+            </summary>
+            <value>The path.</value>
+        </member>
+        <member name="P:Cake.LongPath.Module.LongPathFile.Exists">
+            <summary>
+            Gets a value indicating whether this <see cref="T:Cake.LongPath.Module.LongPathFile"/> exists.
+            </summary>
+            <value>
+              <c>true</c> if the entry exists; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Cake.LongPath.Module.LongPathFile.Hidden">
+            <summary>
+            Gets a value indicating whether this <see cref="T:Cake.Core.IO.IFileSystemInfo"/> is hidden.
+            </summary>
+            <value>
+              <c>true</c> if the entry is hidden; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Cake.LongPath.Module.LongPathFile.Copy(Cake.Core.IO.FilePath,System.Boolean)">
+            <summary>
+            Copies the file to the specified destination path.
+            </summary>
+            <param name="destination">The destination path.</param>
+            <param name="overwrite">Will overwrite existing destination file if set to <c>true</c>.</param>
+        </member>
+        <member name="M:Cake.LongPath.Module.LongPathFile.Move(Cake.Core.IO.FilePath)">
+            <summary>
+            Moves the file to the specified destination path.
+            </summary>
+            <param name="destination">The destination path.</param>
+        </member>
+        <member name="M:Cake.LongPath.Module.LongPathFile.Delete">
+            <summary>
+            Deletes the file.
+            </summary>
+        </member>
+        <member name="M:Cake.LongPath.Module.LongPathFile.Open(System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)">
+            <summary>
+            Opens the file using the specified options.
+            </summary>
+            <param name="fileMode">The file mode.</param>
+            <param name="fileAccess">The file access.</param>
+            <param name="fileShare">The file share.</param>
+            <returns>A <see cref="T:System.IO.Stream"/> to the file.</returns>
+        </member>
+        <member name="T:Cake.LongPath.Module.LongPathModule">
+            <summary>
+            Cake Module that adds long path support to build scripts running on Windows using Pri.LongPat
+            </summary>
+        </member>
+        <member name="M:Cake.LongPath.Module.LongPathModule.Register(Cake.Core.Composition.ICakeContainerRegistrar)">
+            <summary>
+            Registers the replacement <see cref="T:Cake.Core.IO.IFileSystem"/>.
+            </summary>
+            <param name="registry"></param>
+        </member>
+    </members>
+</doc>

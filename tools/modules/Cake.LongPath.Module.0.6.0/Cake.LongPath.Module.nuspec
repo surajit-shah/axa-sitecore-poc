@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Cake.LongPath.Module</id>
+    <version>0.6.0</version>
+    <authors>Mattias Karlsson</authors>
+    <owners>Mattias Karlsson</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/cake-build/cake/blob/develop/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/cake-build/cake</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics/png/cake-contrib-medium.png</iconUrl>
+    <description>The Cake long path module.</description>
+    <summary>This enables long path support for Cake on Windows using the Pri.LongPath library.</summary>
+    <releaseNotes>Initial alpha Release.</releaseNotes>
+    <copyright>Copyright (c) .NET Foundation and Contributors</copyright>
+    <tags>Cake Script Build</tags>
+  </metadata>
+</package>
