@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 using System.Web.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Mirabeau.Foundation.DependencyInjection
+namespace Mirabeau.Foundation.DI
 {
     using System.IO;              
 

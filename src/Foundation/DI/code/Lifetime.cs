@@ -1,6 +1,6 @@
 ﻿using System;                  
 
-namespace Mirabeau.Foundation.DependencyInjection
+namespace Mirabeau.Foundation.DI
 {
     public enum Lifetime
     {

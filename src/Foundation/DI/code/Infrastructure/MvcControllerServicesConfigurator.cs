@@ -1,4 +1,4 @@
-﻿namespace Mirabeau.Foundation.DependencyInjection.Infrastructure
+﻿namespace Mirabeau.Foundation.DI.Infrastructure
 {
     using Microsoft.Extensions.DependencyInjection;
     using Sitecore.DependencyInjection;

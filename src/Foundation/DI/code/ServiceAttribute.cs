@@ -1,6 +1,6 @@
 ﻿using System;            
 
-namespace Mirabeau.Foundation.DependencyInjection
+namespace Mirabeau.Foundation.DI
 {
     [AttributeUsage(AttributeTargets.Class, Inherited = false)]
     public class ServiceAttribute : Attribute
