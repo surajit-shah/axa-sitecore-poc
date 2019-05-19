@@ -1,6 +1,6 @@
 ﻿---
-ID: "c5021a34-7899-42f8-8cf1-699bd2471bf4"
-Parent: "5edd0ba5-0f3b-41cd-8850-a3f2dba7b241"
+ID: "53bbd5d4-19bf-4822-855e-de1960b671ca"
+Parent: "1995806f-0a84-42b5-93b0-88f0e2ff872c"
 Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
 Path: /sitecore/layout/Renderings/Project/Common
 DB: master
@@ -11,4 +11,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190517T234449Z
+      Value: 20190519T202654Z

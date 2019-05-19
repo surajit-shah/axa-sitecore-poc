@@ -1,6 +1,6 @@
 ﻿---
-ID: "71526c97-c34b-43a4-a999-0a4c0716a7db"
-Parent: "603b2437-b6f1-402c-add3-c119d31200c9"
+ID: "74407e2d-4cb9-4715-a189-7d6ab022605a"
+Parent: "da61ad50-8fdb-4252-a68f-b4470b1c9fe8"
 Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
 Path: /sitecore/layout/Renderings/Feature/Search
 DB: master
@@ -11,4 +11,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190517T234217Z
+      Value: 20190519T203730Z

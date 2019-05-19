@@ -82,7 +82,7 @@
     <Content Include="App_Config\Include\Project\z.Common.Website.DevSettings.config" />
     <Content Include="Views\Common\Common.cshtml" />
     <Content Include="Views\Web.config" />
-    <Content Include="web.config.xdt" />
+    <None Include="web.config.xdt" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

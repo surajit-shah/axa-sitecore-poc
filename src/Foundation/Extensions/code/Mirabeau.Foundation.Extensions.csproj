@@ -78,7 +78,7 @@
     <Content Include="App_Config\Include\Foundation\Foundation.Extensions.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="App_Config\layers.config.xdt" />
+    <None Include="App_Config\layers.config.xdt" />
     <None Include="web.config.xdt" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

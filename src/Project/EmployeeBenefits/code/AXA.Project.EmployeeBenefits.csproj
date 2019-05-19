@@ -80,6 +80,7 @@
     </Content>
     <Content Include="Views\EmployeeBenefits\EmployeeBenefits.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\EmployeeBenefits\Layouts\Layout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -96,7 +97,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\EmployeeBenefits\Layouts\" />
     <Folder Include="Views\EmployeeBenefits\Sublayouts\" />
   </ItemGroup>
   <PropertyGroup>
