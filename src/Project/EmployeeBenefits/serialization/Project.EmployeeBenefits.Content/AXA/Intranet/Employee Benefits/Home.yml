@@ -1,0 +1,39 @@
+﻿---
+ID: "03b2eb8b-da44-4db1-af1c-8ebd541d3d1c"
+Parent: "f3f81f34-d786-4b37-b454-60cdbf49ea7e"
+Template: "889e1c9d-b505-4d20-bd41-e1d082e40651"
+Path: /sitecore/content/AXA/Intranet/Employee Benefits/Home
+DB: master
+BranchID: "b90549b5-c997-4d6b-b102-c9ab82528974"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{92EB9EFB-88D4-4089-82BE-AAD92D4FA24E}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+            s:l="{EC63A911-53A7-47A3-8374-D40CF5DE788D}" />
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190519T221518Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Employee Benefits
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "b22071c8-f5ef-4906-a7ca-df7c29e7e4ae"
+      Hint: Title
+      Value: Employee Benefits

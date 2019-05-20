@@ -1,0 +1,29 @@
+﻿---
+ID: "50fcf4a0-1ac0-4594-bd47-b19401e61fee"
+Parent: "816adaa8-6a5f-42d8-86c6-9e29eaefbc5d"
+Template: "5a0c6f59-f3cc-414e-9d77-545f5808c012"
+Path: /sitecore/content/AXA/Intranet/Employee Benefits/Presentation/Page Designs
+DB: master
+BranchID: "b90549b5-c997-4d6b-b102-c9ab82528974"
+SharedFields:
+- ID: "ba1f60d6-3deb-40cc-bb61-eec772279ee1"
+  Hint: TemplatesMapping
+  Value: "%7b2740D7F6-5664-48B6-A1B9-715AEF0D7F47%7d%3d%257B6410A89F-8EE3-4784-9B8E-76B87D0DBAB4%257D%26%7b889E1C9D-B505-4D20-BD41-E1D082E40651%7d%3d%257B6410A89F-8EE3-4784-9B8E-76B87D0DBAB4%257D"
+- ID: "c0c88e34-d7e6-46a0-b84f-b0a432d11642"
+  Hint: Theme
+  Value: 
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{5D5CE43E-D5C6-4C53-89BC-36285DDE8EC9}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190519T221518Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser

@@ -1,0 +1,18 @@
+﻿---
+ID: "72da24ec-eb71-431e-ba6e-aba142947a4d"
+Parent: "f855ad21-1c55-4f6e-bccf-1d0ab6944545"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Navigation/_LanguageSwitcher/Language Switcher
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190519T224520Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

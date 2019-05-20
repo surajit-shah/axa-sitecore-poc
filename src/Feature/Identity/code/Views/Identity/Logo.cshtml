@@ -1,0 +1,29 @@
+﻿@using Mirabeau.Feature.Identity.Repositories
+@using Mirabeau.Foundation.Extensions.Extensions;
+@using Mirabeau.Feature.Identity;
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+
+@{
+    var logo = IdentityRepository.GetLogo(Model.Item);
+    if (logo == null)
+    {
+        return;
+    }
+
+    var logoLinkUrl = Sitecore.Context.Site?.GetStartItem().Url() ?? "/";
+    var hasSecondaryLogo = logo.FieldHasValue(Templates.Logo.Fields.SecondaryLogo);
+}
+<div id="headerTop">
+    <div class="col-md-6 col-sm-12 leftlogo">
+        @Html.Sitecore().ImageField(Templates.Logo.Fields.MainLogo, logo);
+    </div>
+    <div class="col-md-6 col-sm-12 rightlogo">
+        <div id="rightimage">
+            @if (hasSecondaryLogo)
+            {
+                @Html.Sitecore().ImageField(Templates.Logo.Fields.SecondaryLogo, logo);
+            }
+        </div>
+    </div>
+</div>

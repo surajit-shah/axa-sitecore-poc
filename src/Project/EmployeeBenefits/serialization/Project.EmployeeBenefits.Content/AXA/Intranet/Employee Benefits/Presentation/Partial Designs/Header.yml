@@ -1,0 +1,39 @@
+﻿---
+ID: "bb2c8928-776b-4376-8609-89513f27ed95"
+Parent: "83b4b96d-c888-4883-9af9-5bc3177ac5b6"
+Template: "bf680756-b2fa-4cae-8b69-ee361080616f"
+Path: /sitecore/content/AXA/Intranet/Employee Benefits/Presentation/Partial Designs/Header
+DB: master
+SharedFields:
+- ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
+  Hint: Signature
+  Value: header
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+            s:l="{EC63A911-53A7-47A3-8374-D40CF5DE788D}">
+            <r
+              uid="{C5B83C03-C340-48B6-888E-7D3E22D2B991}"
+              s:ds=""
+              s:id="{F5E436CB-5E0A-4564-90C6-51E323D29600}"
+              s:par=""
+              s:ph="header" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190519T222011Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

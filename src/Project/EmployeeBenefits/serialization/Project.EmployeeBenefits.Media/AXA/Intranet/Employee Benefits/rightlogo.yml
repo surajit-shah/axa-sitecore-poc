@@ -1,0 +1,40 @@
+﻿---
+ID: "1e8976ad-b6c9-4091-8363-c0fbecebfe26"
+Parent: "cef7a2f8-81cf-4610-ad71-edb14054730d"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: /sitecore/media library/Project/AXA/Intranet/Employee Benefits/rightlogo
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/1E8976ADB6C940918363C0FBECEBFE26.ashx?h=16&thn=1&w=16"
+- ID: "22eac599-f13b-4607-a89d-c091763a467d"
+  Hint: Width
+  Value: 188
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "4ba7b5bd-5c0b-41d5-b258-f01dd49eb4be"
+  Value: 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
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 1841
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/png
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: png
+- ID: "cb09946f-3218-4823-87d2-d5007c199a96"
+  Hint: Dimensions
+  Value: 188 x 40
+- ID: "de2ca9e4-c117-4c8a-a139-1ff4b199d15a"
+  Hint: Height
+  Value: 40
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190519T225834Z

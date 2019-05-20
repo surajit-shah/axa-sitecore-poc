@@ -81,6 +81,9 @@
     <Content Include="Views\EmployeeBenefits\EmployeeBenefits.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\EmployeeBenefits\Layouts\Layout.cshtml" />
+    <Content Include="App_Config\Include\Project\Project.EmployeeBenefits.Content.Serialization.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

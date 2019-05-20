@@ -1,0 +1,18 @@
+﻿---
+ID: "cc854f2d-d78d-43c0-859c-d04885376970"
+Parent: "b8933c97-eff6-4456-81c1-ad6aa0f67893"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Identity/Logo/Main Logo
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190519T225337Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

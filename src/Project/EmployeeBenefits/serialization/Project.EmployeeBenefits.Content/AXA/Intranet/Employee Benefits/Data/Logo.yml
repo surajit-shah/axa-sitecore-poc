@@ -1,0 +1,26 @@
+﻿---
+ID: "e8b601a1-719a-4166-a781-2b75bc0f2916"
+Parent: "8b05326b-fc6f-4c1b-ab23-37c563e5c7db"
+Template: "b8933c97-eff6-4456-81c1-ad6aa0f67893"
+Path: /sitecore/content/AXA/Intranet/Employee Benefits/Data/Logo
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0def25cc-514f-4764-8381-2f5c693e874c"
+      Hint: Secondary Logo
+      Value: |
+        <image mediaid="{1E8976AD-B6C9-4091-8363-C0FBECEBFE26}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190519T225521Z
+    - ID: "3e9dfc10-4fe7-40dc-9241-2b629a61bcff"
+      Hint: Logo
+      Value: |
+        <image mediaid="{545EC7DB-E55A-48FA-9B77-BEB032BD989D}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
