@@ -1,9 +1,7 @@
-namespace Mirabeau.Feature.Identity.Controllers
+namespace Mirabeau.Feature.Forms.Controllers
 {
     using System;
     using System.Web.Mvc;
-    using Sitecore.Data;
-    using Repositories;
 
     public class IdentityController : Sitecore.Mvc.Controllers.SitecoreController
     {

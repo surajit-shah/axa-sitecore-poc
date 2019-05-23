@@ -1,0 +1,220 @@
+﻿@using Mirabeau.Feature.Search.Models
+@using Sitecore.Data.Items;
+@using Sitecore.Mvc.Presentation
+
+@model RenderingModel
+@{
+    //SearchResults searchResults = new SearchResults();
+    List<ResultItems> resultItems = new List<ResultItems>();
+    bool isSearchResultavailable = false;
+    bool showMediaResults = false;
+    List<ResultData> resultDatas = new List<ResultData>();
+    Item[] items = Sitecore.Configuration.Factory.GetDatabase("master").GetItem("{28304EE5-F79B-4FB6-AE45-9926A63AC41D}").Children.ToArray();
+    /*GetItem("/sitecore/content/EmployeeBenefits/SearchResltData/ResultItemData").Children.ToArray();*/
+    if (items != null)
+    {
+        //  ResultData resultItem=new ResultData()
+        // var resultItem = new ResultItems();
+        //Item[] carouselItems = multilistField.GetItems();
+        foreach (Item item in items)
+        {
+            var resultItem = new ResultItems();
+
+            if (item != null)
+            {
+                isSearchResultavailable = true;
+                resultItem.Name = item.Fields["Name"].Value;
+                resultItem.Title = item.Fields["Title"].Value;
+                resultItem.Description = item.Fields["Description"].Value;
+                resultItem.Url = item.Fields["Url"].Value;
+                resultItem.MediaUrl = item.Fields["MediaUrl"].Value;
+                if (resultItem.MediaUrl != string.Empty)
+                {
+                    showMediaResults = true;
+                }
+                resultItems.Add(resultItem);
+            }
+
+        }
+    }
+    else
+    {
+
+        isSearchResultavailable = false;
+        showMediaResults = false;
+    }
+}
+}
+
+<div class="col-md-9" id="searchContent">
+    <!--<nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>-->
+    <div class="container searchbox">
+        <div class="row">
+            <div class="col-md-1">&nbsp;</div>
+            <!-- Input Group -->
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div id="">
+                            @using (Html.BeginForm("Search", "SCSearch", FormMethod.Post))
+                            {
+                                <form action="/Search" method="post" id="searchform">
+                                    <input name="SearchStr" type="text" id="" style="width: 300px">
+                                   
+                                    <input type="submit" class="submit" value="search"/>
+                                   
+                                    @*<a id="" title="Search" class="magSubmit" href=''></a>*@
+                                </form>
+                            }
+                        </div>
+                        @*@using (Html.BeginForm("Search", "SCSearch", FormMethod.Post))
+            {
+
+        <input type="text" name="SearchStr" id="SearchStr" class="form-control" placeholder="Search" />
+        <span class="input-group-addon" style="cursor: pointer;">
+            <button type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </span>
+        }*@
+                        @*<input type="text" class="form-control"
+               placeholder="Search" id="inputGroup" />
+        <span class="input-group-addon" style="cursor: pointer;" onclick="myFunction()">
+            <i class="fa fa-search"></i>
+        </span>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="searchContainer">
+        @if (isSearchResultavailable)
+        {
+            if (showMediaResults)
+            {
+                foreach (var resultItem in resultItems)
+                {
+                    <div class="searchResult raise">
+                        <div class="wrapper">
+                            <a class="third after" href="@resultItem.MediaUrl" target="_blank"><i style="padding-right:10px" class="fa fa-link icon" aria-hidden="true"></i>@resultItem.Name</a>
+                            <div class="search-second">
+                                @*<p class="search-second-1"> Use SHIFT + ENTER to open the menu </p>*@
+                                <p class="search-second-date">@resultItem.Description </p>
+                            </div>
+                            <div class="url-wrapper">
+                                <span class="url">
+                                    @*@resultItem.Name*@
+                                    <a title="@resultItem.Name" href="@resultItem.MediaUrl" target="_blank">
+                                        @resultItem.Name
+                                    </a>
+                                </span>
+                                @*<span class="url">@resultItem.Name</span>*@
+                            </div>
+
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                foreach (var resultItem in resultItems)
+                {
+                    <div class="searchResult raise">
+                        <div class="wrapper">
+                            <a class="third after" href="@resultItem.Url"><i  style="padding-right :10px" class="fa fa-link icon" aria-hidden="true"></i>@resultItem.Name</a>
+                            <div class="search-second">
+                                @*<p class="search-second-1"> Use SHIFT + ENTER to open the menu </p>*@
+                                <p class="search-second-date">@Html.Raw(resultItem.Description) </p>
+                            </div>
+                            <div class="url-wrapper">
+                                @*<span class="url">
+                                   
+                                    <a title="@resultItem.Name" href="@resultItem.Url">
+                                        @resultItem.Name
+                                    </a>
+                                </span>*@
+                               
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                }
+            }
+        }
+        else
+        {
+            <div class="searchResult raise">
+
+                <div class="wrapper">
+                    <a class="third after" href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Configuration.Factory.GetDatabase("master").GetItem("/sitecore/content/EmployeeBenefits/Pages"))"><i class="fa fa-link icon" aria-hidden="true"></i>Sorry!! No results Found, Click on this link to go back to Home</a>
+                    <div class="search-second">
+                        @*<p class="search-second-1"> Use SHIFT + ENTER to open the menu </p>*
+                        <p class="search-second-date">Sorry!! No results Found</p>*@
+                    </div>
+                    <div class="url-wrapper">
+                        @*<span class="url"></span>*@
+                    </div>
+
+                </div>
+
+            </div>
+        }
+    </div>
+    @*<div class="btn-container">
+        <button class="btn draw-border"> Load More</button>
+    </div>*@
+</div>
+         }   @*<div class="col-md-9" id="firstContent">
+
+        <div class="container">
+            <div class="row">
+                <div class="row clear-both">
+                    <div id="left-sidebar" class="col-md-3 sidebar">
+                        <div class="side-nav sidebar-block">
+                            <h2>@SiteHelper.GetDictionaryText("Refine Results")</h2>
+                            <form action="/Search" method="post" id="filterSearch">
+                                @foreach (var facet in Model.Facets)
+                                {
+                                    <h3>@facet.FacetName</h3>
+                                    <ul class="css-checkboxes">
+                                        @foreach (var entry in facet.Items)
+                                        {
+                                            <li><input type="checkbox" id="@facet.FacetName|@entry.Id" name="facets" value="@facet.FacetName|@entry.Id" checked="@entry.Selected" onchange="javascript:document.getElementById('filterSearch').submit()" /><label for="@facet.FacetName|@entry.Id">@entry.Name</label></li>
+                                        }
+                                    </ul>
+                                }
+                                <input type="hidden" value="@Model.SearchString" id="searchStr" name="searchStr" />
+                            </form>
+                            @Html.Sitecore().Placeholder("content-tertiary")
+                        </div>
+                    </div>
+                    <div class="col-md-9 main-column two-columns-left">
+                        <h1>@SiteHelper.GetDictionaryText("Search Results for") @Model.SearchString</h1>
+
+                        @foreach (var item in Model.Results)
+                        {
+                            <div>
+                                <p>@Model.SearchItemName</p>
+                                <p>@Model.SearchitemDescription</p>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>*@
+        @*<div class="col-md-3">
+                @Html.Sitecore().Placeholder("ArticlePage.Grid.Right")
+            </div>*@
+

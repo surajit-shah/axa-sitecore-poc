@@ -1,9 +1,9 @@
 {
-  "WebsiteRoot": "C:\\Inetpub\\wwwroot\\axa-sitecore-poc.dev.local",
-  "XConnectRoot": "C:\\Inetpub\\wwwroot\\axa-sitecore-poc.xconnect",
-  "InstanceUrl": "https://axa-sitecore-poc.dev.local/",
+  "WebsiteRoot": "C:\\SitecoreTraining\\sitecore91.local",
+  "XConnectRoot": "C:\\SitecoreTraining\\sitecore91.local.xconnect",
+  "InstanceUrl": "http://Sitecore91.local/",
   "SolutionName": "axa-sitecore-poc.sln",
-  "ProjectFolder": "C:\\Projects\\Sitecore-Solutions\\AXA",
+  "ProjectFolder": "C:\\POC\\EBPOC-Habitat",
   "BuildConfiguration": "Debug",
   "BuildToolVersions": "VS2017",
   "RunCleanBuilds": false,

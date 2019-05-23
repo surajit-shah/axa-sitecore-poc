@@ -1,0 +1,25 @@
+﻿@using Mirabeau.Feature.Carousel.Models
+@model IEnumerable<CarouselSlide>
+<div class="carousel-inner">
+    @foreach (var item in Model)
+    {
+        if (item.Title == "CarouselSlide1")
+        {
+            <div class="item active">
+                @*<a href="@item.Url" style="align-content:center">*@
+                @*@item.Image*@
+                <img src="@item.Image" class="carousel-img" />
+                @*</a>*@
+            </div>
+        }
+        else
+        {
+            <div class="item">
+                @*<a href="@item.Url" style="align-content:center">*@
+                @*@item.Image*@
+                <img src="@item.Image" class="carousel-img" />
+                @*</a>*@
+            </div>
+        }
+    }
+</div>

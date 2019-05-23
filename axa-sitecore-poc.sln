@@ -35,9 +35,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Articles", "Articles", "{E0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirabeau.Feature.Articles", "src\Feature\Articles\code\Mirabeau.Feature.Articles.csproj", "{7869A00B-99FA-4AB1-BF70-BB3DB965DC32}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Metadata", "Metadata", "{1554F789-2D83-4422-9459-BD9AE724315A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Carousel", "Carousel", "{1554F789-2D83-4422-9459-BD9AE724315A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirabeau.Feature.Metadata", "src\Feature\Metadata\code\Mirabeau.Feature.Metadata.csproj", "{2683AB79-1BB6-4461-A392-41C2D0DA8848}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirabeau.Feature.Carousel", "src\Feature\Metadata\code\Mirabeau.Feature.Carousel.csproj", "{2683AB79-1BB6-4461-A392-41C2D0DA8848}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Navigation", "Navigation", "{ABDF67F3-EAEB-43F7-A539-3F676B948E2A}"
 EndProject
@@ -55,9 +55,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EmployeeBenefits", "Employe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AXA.Project.EmployeeBenefits", "src\Project\EmployeeBenefits\code\AXA.Project.EmployeeBenefits.csproj", "{E956FBE4-82DE-4A59-8E75-C4E581F410CD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{5DABE0E9-6ED1-4F0B-A0B0-DF7CF2A60BB3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Forms", "Forms", "{5DABE0E9-6ED1-4F0B-A0B0-DF7CF2A60BB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirabeau.Feature.Identity", "src\Feature\Identity\code\Mirabeau.Feature.Identity.csproj", "{D8B2299A-551C-4970-AE29-DAE682EB37D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirabeau.Feature.Forms", "src\Feature\Identity\code\Mirabeau.Feature.Forms.csproj", "{D8B2299A-551C-4970-AE29-DAE682EB37D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

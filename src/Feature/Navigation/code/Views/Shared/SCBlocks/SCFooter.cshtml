@@ -1,0 +1,21 @@
+﻿@using Sitecore.Mvc@using Sitecore.Mvc.Presentation
+@*@using EBPOC.Web.Helpers*@
+@model RenderingModel
+@{
+
+}
+@*<div>
+        @Model.Item.Name has a title @Model.Item.Fields["Title"]
+    </div>*@
+<div id="footern">
+    @Html.Sitecore().Controller("SCDocuments", "SCDocumentList")
+    <div class="col-md-2 col-sm-4">
+        @*@Html.Sitecore().Placeholder("FooterNavigation")*@
+        @Html.Sitecore().Controller("SCNavigations", "FooterNavigation")
+    </div>
+</div>
+<ul class="footer_ul_copyright">
+    <li class="footer_li_2">
+        <a title="Copyright © 2017" href="/employeebenefits#">Copyright © 2017</a>
+    </li>
+</ul>

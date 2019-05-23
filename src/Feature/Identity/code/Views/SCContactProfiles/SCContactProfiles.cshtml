@@ -1,0 +1,15 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Mirabeau.Feature.Forms.Models
+
+@model SCContactVM
+
+<div class="form_field">
+    @Html.DropDownListFor(
+        x => x.SelectedProfileId,
+        new SelectList(Model.ContactProfiles, "ContactProfileValue", "ContactProfileName")
+        )
+    @*@Html.DropDownListFor("ddlContactProfile",
+            new SelectList(Model.ContactProfiles, "ContactProfileValue", "ContactProfileName"), new { @class =""  }
+        )*@
+</div>

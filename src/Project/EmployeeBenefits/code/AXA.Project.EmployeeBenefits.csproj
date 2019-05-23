@@ -84,6 +84,17 @@
     <Content Include="App_Config\Include\Project\Project.EmployeeBenefits.Content.Serialization.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Views\Shared\ExperienceExplorerView.cshtml" />
+    <Content Include="Views\Shared\SCArticleLayout.cshtml" />
+    <Content Include="Views\Shared\SCBlocks\SCFooter.cshtml" />
+    <Content Include="Views\Shared\SCBlocks\SCHeader.cshtml" />
+    <Content Include="Views\Shared\SCBlocks\SCHtmlBlock.cshtml" />
+    <Content Include="Views\Shared\SCBlocks\SCRightSideBar.cshtml" />
+    <Content Include="Views\Shared\SCBlocks\SCVerticalContentHolder.cshtml" />
+    <Content Include="Views\Shared\SCGrids\SCArticleGrid.cshtml" />
+    <Content Include="Views\Shared\SCGrids\SCMainGrid.cshtml" />
+    <Content Include="Views\Shared\SCMainLayout.cshtml" />
+    <Content Include="Views\Shared\SCPageBody\SCSuccess.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -97,6 +108,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\SiteHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

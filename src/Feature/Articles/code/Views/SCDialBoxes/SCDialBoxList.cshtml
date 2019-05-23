@@ -1,0 +1,8 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+    var pageContext = Sitecore.Mvc.Presentation.PageContext.CurrentOrNull;
+    string ItemId = new Sitecore.Data.Items.Item.ItemDebuggerTypeProxy(pageContext.Item).Id;
+}
+@Html.Action("SCDialBox", "SCDialBoxes", new { ItemId = Model.Item })

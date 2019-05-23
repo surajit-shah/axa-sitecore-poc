@@ -1,0 +1,34 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Mirabeau.Feature.Forms.Models
+
+@model SCContactVM
+
+<h3>Company information</h3>
+@foreach (var field in Model.ContactProfileFields)
+{
+    <div class="form_field">
+        @if (field.FieldType.ToUpper() != "SEPERATOR")
+        {
+            <label for="SocNom">@field.FieldLabel</label>
+        }
+        @switch (field.FieldType.ToUpper())
+        {
+            case "LABEL":
+                @*<input name="ctl00$WPMMasterPage$g_6ea89758_fe38_4dad_b20a_3c5e5a7ce7cd$ctl00$SocNom" type="text" id="ctl00_WPMMasterPage_g_6ea89758_fe38_4dad_b20a_3c5e5a7ce7cd_ctl00_SocNom" class="input_small">*@
+                break;
+            case "DROPDOWNLIST":
+                @*<input name="ctl00$WPMMasterPage$g_6ea89758_fe38_4dad_b20a_3c5e5a7ce7cd$ctl00$SocNom" type="text" id="ctl00_WPMMasterPage_g_6ea89758_fe38_4dad_b20a_3c5e5a7ce7cd_ctl00_SocNom" class="input_small">*@
+                break;
+            case "TEXT":
+                <input name="@field.FieldProfile@field.FieldType@field.FieldTitle" type="text" id="@field.FieldProfile@field.FieldType@field.FieldTitle" class="input_small">
+                break;
+            case "TEXTAREA":
+                <textarea name="@field.FieldProfile@field.FieldType@field.FieldTitle" id="@field.FieldProfile@field.FieldType@field.FieldTitle" class="input_long" rows="5"></textarea>
+                break;
+            case "SEPERATOR":
+                <h3>@field.FieldLabel</h3>
+                break;
+        }
+    </div>
+}

@@ -1,0 +1,16 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Mirabeau.Feature.Articles.Models
+
+@model IEnumerable<SCDialBoxVM>
+@foreach (var item in Model)
+{
+    <div id="dail_box" style="background: url(@item.DialBoxBGImage) no-repeat;background-size: 100%;">
+        @*@Html.Sitecore().Field("link", new { text = Html.Sitecore().Field("image") })*@
+        <a href="" title="All benefits,no paper">
+            <strong>
+                @item.DialBoxText
+            </strong>
+        </a>
+    </div>
+}
